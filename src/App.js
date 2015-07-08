@@ -1,9 +1,23 @@
-import React, { Component } from 'react';
+import React from 'react';
+import Radium from 'radium';
 
-export default class App extends Component {
+const App = React.createClass({
+
+  getText() {
+    return 'Hello World';
+  },
+
+  getStyles() {
+    return {
+      color: 'blue',
+    };
+  },
+
   render() {
     return (
-      <h1>Hello, world.</h1>
+      <h1 style={this.getStyles()}>{this.getText()}</h1>
     );
   }
-}
+});
+
+module.exports = Radium(App);
