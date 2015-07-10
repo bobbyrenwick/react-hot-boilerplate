@@ -37,7 +37,7 @@
     "webpack-dev-server": "^1.8.2"
   },
   "dependencies": {
-    "radium": "^0.13.2",
+    "radium": "git://github.com/bobbyrenwick/radium.git#6a06128377cfb45f89cd35cfe18a27526bc520b1",
     "react": "^0.13.3"
   }
 }
